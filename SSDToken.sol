@@ -1,7 +1,7 @@
 /**
- * Copyright (C) Virtue Fintech FZ-LLC, Dubai
+ * Copyright (C) Siousada.io
  * All rights reserved.
- * Author: mhi@virtue.finance
+ * Author: info@siousada.io
  *
  * This code is adapted from OpenZeppelin Project.
  * more at http://openzeppelin.org.
@@ -300,12 +300,12 @@ contract ERC20Token is ERC20 {
 
 }
 
-contract SSDToken2 is ERC20Token, Guarded, Claimable {
+contract SSDToken is ERC20Token, Guarded, Claimable {
 
-    uint256 public SUPPLY = 1000000000 ether;   // 1.6b ether;
+    uint256 public SUPPLY = 1000000000 ether;   // 1b ether;
 
     // our constructor, just supply the total supply.
-    function SSDToken2() 
+    function SSDToken() 
         ERC20Token('SIOUSADA', 'SSD', 18) 
     {
         totalSupply = SUPPLY;
